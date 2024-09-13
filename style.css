@@ -76,8 +76,29 @@ body {
 .description p {
   font-size: 1.2em;
 }
+/* for mobile responsive */
+#intro {
+  padding: 50px;
+}
 
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skills-icons img {
+  width: 50px;
+  height: 50px;
+}
 
 
 /* Styling for the Who Am I section */
@@ -336,10 +357,11 @@ button:hover {
 
   .footer-buttons {
     flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center;
   }
 
   .footer-buttons a {
-    width: 100%; /* Make buttons full width */
+    width: 50%; /* Make buttons full width */
     text-align: center;
   }
 }

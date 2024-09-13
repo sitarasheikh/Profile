@@ -294,4 +294,54 @@ button:hover {
   background-color: #d35400;
 }
 }
+ /* footer responsive */
+ footer {
+  background-color: #111;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Flexbox for buttons */
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Wrap buttons if they overflow */
+}
+
+.footer-buttons a {
+  background-color: #e67e22;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  display: inline-block;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.footer-buttons a:hover {
+  background-color: #d35400;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .footer-buttons {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+  }
+
+  .footer-buttons a {
+    width: 100%; /* Make buttons full width */
+    text-align: center;
+  }
+}
+
 
